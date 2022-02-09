@@ -1,0 +1,160 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.currentItem
+		display: block
+		position: relative
+		width: 100%
+		max-width: 220px
+	.itemSideBar_6
+		a
+			font-size: 14px
+	.dropbtn
+		p
+			font-size: 12px
+// ≥992px
++media-breakpoint-down(md)
+	#Portfolio
+		margin: $gutter*2 0
+	.currentItem
+		display: block
+		position: relative
+		width: 100%
+		max-width: 220px
+		p
+			font-size: 14px
+			span
+				font-size: 18px
+	#TopLine-contacts
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+	.start__page
+		grid-template-columns: 1fr
+		grid-template-areas: "main" "footer" 
+	.burger
+		display: flex
+		font-size: 32px
+	.close
+		display: flex
+		background: $accent
+		height: 30px
+		width: 30px
+		border-radius: 20px
+		position: absolute
+		right: 5px
+		top: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: none
+		color: #fff
+		outline: none
+		cursor: pointer
+		i
+			font-size: 18px
+		&::hover
+			color: #bdbdbd
+			transition: color 0.3s ease
+		
+		
+	.sideBar__wrapp
+		position: relative
+	.section__sideBar
+		z-index: 2
+		opacity: 0
+		display: none
+		transition: opacity 0.2s ease-in
+
+
+// ≥768px
++media-breakpoint-down(sm)
+	.section__sideBar
+		margin-top: 62px
+	#Portfolio
+		margin: $gutter 0
+	.cascade-slider_container
+		.cascade-slider_arrow
+			top: 45%
+	.currentText
+		p
+			span
+				font-size: 26px
+
+	.wrapcurrentItem
+		width: 100%
+		.currentItem
+			max-width: 250px
+	.search
+		display: none
+	#topline
+		z-index: 5
+		position: fixed
+	.wrapFooter-mainContent
+		display: flex
+		flex-direction: column
+	.footer
+		height: 500px
+// ≥576px
++media-breakpoint-down(xs)
+	.column-two
+		font-size: 10px
+	.footer
+		height: 300px
+	.wrapFooter-mainContent
+		height: 300px
+	.wrapFoote-menu
+		display: none
+	#infoText .wrapInfoText
+		padding: 15px 30px
+	.button-sale
+		padding: 5px 15px
+	#infoText .wrapInfoText p span
+		font-size: 26px
+	#Portfolio
+		margin: $gutter 0
+	.Portfolio-content span p
+			font-size: 26px
+	.cascade-slider_container
+		height: 150px
+		.cascade-slider_arrow
+			top: 35%
+		.cascade-slider_arrow-left
+			left: 0px
+		.cascade-slider_arrow-right
+			right: 0
+	.cascade-slider_arrow i
+		font-size: 30px
+		color: #fff
+	#infoText
+		margin-top: $gutter/3
+	#currentProduct
+		margin-top: $gutter/3
+	.menu-top
+		display: none
+	#toplineMenu
+		width: 100%
+		display: flex
+		justify-content: space-between
+	.calc__row
+		font-size: 12px
+	.footer--row__wrap--1
+		display: none
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
